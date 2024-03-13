@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "id": "a9d2",
+      "name": "Shubham",
+      "dob": "2001-02-05",
+      "email": "shubham@gmail.com",
+      "password": "Shubham@1234"
+    },
+    {
+      "id": "86df",
+      "name": "Abhishek",
+      "dob": "2024-03-19",
+      "email": "abhi@gmail.com",
+      "password": "abhi@123"
+    }
+  ]
+}

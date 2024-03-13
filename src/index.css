@@ -1,13 +1,104 @@
+/* General styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2; /* Light gray background color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Form container styles */
+#root{
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background color */
+  border: 1px solid #dcdcdc; /* Light gray border */
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+/* Form title styles */
+h1 {
+  text-align: center;
+  color: #3498db !important ;
+}
+
+/* Form input styles */
+Form {
+  margin-top: 20px;
+}
+
+Form.Label {
+  font-weight: bold;
+  color: #555; /* Dark gray text color */
+}
+
+Form.Control {
+  margin-bottom: 15px;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  /* Placeholder styles */
+  &::placeholder {
+    color: #6c757d; /* Placeholder text color */
+  }
+
+  /* Focus styles */
+  &:focus {
+    border-color: #007bff; /* Bootstrap primary color */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus shadow */
+  }
+}
+
+
+/* Button styles */
+Button {
+  background-color: #3498db; 
+  color: #ffffff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+Button:hover {
+  background-color: #2185c5; /* Slightly darker shade on hover */
+}
+
+/* DataTable.css */
+/* .table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+/* Style the table */
+.table {
+  width: 80%;
+}
+
+/* Optional: Add some spacing between cells */
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center;
+}
+
+/* Optional: Style the table header */
+.table thead th {
+  background-color: #fff; /* Bootstrap dark theme color */
+  color:#000;
+}
+
+/* Optional: Style alternating rows */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa; /* Bootstrap light theme color */
+}
+
+/* Optional: Add hover effect on rows */
+.table-hover tbody tr:hover {
+  background-color: #e2e6ea; /* Bootstrap secondary theme color */
 }
